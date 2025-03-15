@@ -1,0 +1,23 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+.searchContainer {
+    align-content: space-around;
+    height: 200px;
+    display:flexbox;
+    justify-content: space-around;
+    border:1px solid blue;
+}
+
+.searchText {
+    margin: 5px 5px;
+    padding: 5px 2px;
+    width: 100%;
+}
+
+.searchBtn {
+    padding: 5px 2px;
+    width: 100%;
+    float:center;
+}

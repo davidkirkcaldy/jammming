@@ -1,0 +1,18 @@
+/*
+ *   Copyright (c) 2025 David Kirkcaldy
+ *   All rights reserved.
+ */
+.trackContainer {
+    background-color:cornsilk;
+    padding: 2px 2px;
+    color: brown;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.addTrackBtn {
+    background: none;
+    border: none;
+    font-size:50px;
+}
