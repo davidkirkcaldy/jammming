@@ -18,16 +18,19 @@ const SearchBar = ({searchSpotify}) => {
 
     return (
         <div className={classes.searchContainer}>
-            <input 
-                className={classes.searchText}
-                onChange={handleChange} 
-                type='text' 
-                placeholder='Search Spotify...' />
-            <button 
-                    className={classes.searchBtn} 
-                    onClick={handleClick}>
-                        Search
-            </button>
+            <div className={classes.searchText}>
+                <input 
+                    onChange={handleChange} 
+                    type='text' 
+                    placeholder='Search Spotify...' 
+                    value={searchTerm}/>
+            </div>
+            <div className={classes.searchBtn} >
+                <button 
+                        onClick={handleClick}>
+                            Search
+                </button>
+            </div>
        </div>
     );
 }

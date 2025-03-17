@@ -6,10 +6,9 @@ import React from 'react';
 import classes from './Tracklist.module.css'
 import Track from '../Track/Track';
 
-const Tracklist = ({trackList}) => {
-    console.log(trackList);
+const Tracklist = ({trackList, handleTrackFunction}) => {
     const list =  trackList ? trackList.map((trk, index) => {
-            return <Track key={index} track={trk} />;
+            return <Track key={index} track={trk}  inPlaylist={false} handleTrackFunction={handleTrackFunction}/>;
         }): null;
     
     return (

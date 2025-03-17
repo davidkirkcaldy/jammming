@@ -8,16 +8,19 @@ import Spotify from '../../utils/spotify.js'
 
 function App() {
   const [trackList, setTrackList] = useState([]);
-  const [playList, setPlayList]  = useState([{            
-    name: `Tiny Dancer`,
-    artist: 'Elton John',
-    album: 'Madman Across The Water',
-    id: 0
-  }]);
+  const [playList, setPlayList]  = useState([]);
 
   const searchSpotify = (term) => {
     const tracks = Spotify.search(term);
     setTrackList(tracks);
+  }
+
+  const handleTrackFunction = (track, inPlaylist) => {
+    setPlayList((prev) => {
+      return !inPlaylist ? 
+            [track, ...prev] :
+            prev.filter((t) => { return t.id !== track.id});
+    })
   }
 
   return (
@@ -27,8 +30,8 @@ function App() {
       </header>
       <SearchBar searchSpotify={searchSpotify}/>
       <div className={classes.bothLists}>
-        <Tracklist trackList={trackList}/>
-        <Playlist playList={playList}/>
+        <Tracklist trackList={trackList} handleTrackFunction={handleTrackFunction}/>
+        <Playlist playList={playList}  handleTrackFunction={handleTrackFunction}/>
       </div>
     </div>
   );

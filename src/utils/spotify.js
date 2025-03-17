@@ -17,6 +17,14 @@ const Spotify = {
                 id: index
             };
         });
+    },
+
+    savePlaylist(playlist) {
+        if (playlist) {
+        console.log(`Saving playlist, ${playlist.length} tracks`);
+        } else {
+            console.log('No playlist tracks found1');
+        }
     }
 }
 
