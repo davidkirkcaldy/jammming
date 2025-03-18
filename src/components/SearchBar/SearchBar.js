@@ -2,13 +2,13 @@
  *   Copyright (c) 2025 David Kirkcaldy
  *   All rights reserved.
  */
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import classes from './SearchBar.module.css';
 
-const SearchBar = ({searchSpotify}) => {
+const SearchBar = ({getSearchTerm}) => {
     const [searchTerm, setSearchTerm] = useState('');
     const handleClick = (event) => {
-        searchSpotify(searchTerm);
+        getSearchTerm(searchTerm);
     };
 
     const handleChange = ({target}) => {

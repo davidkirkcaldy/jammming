@@ -9,7 +9,7 @@ const Track = ({track, inPlaylist, handleTrackFunction}) => {
     const handleBtnClick = ({target}) => {
         handleTrackFunction(track, inPlaylist);
     }
-
+    console.log('  Track.js: track:', track);
     return (
         <div className={classes.trackContainer}>
             <div>
