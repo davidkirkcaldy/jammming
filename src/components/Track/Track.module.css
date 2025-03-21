@@ -4,10 +4,11 @@
  */
 .trackContainer {
     background-color:cornsilk;
-    padding: 2px 2px;
+    padding: 1px 1px;
     color: brown;
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid black;
 }
 
 .addTrackBtn {

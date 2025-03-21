@@ -16,6 +16,20 @@
     color:blue;
   }
 
+  .playlistTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 0 auto;
+    margin:0 auto;
+    background-color: cornsilk;
+    border:none;
+  }
+
+
+
   .saveToSpotify {
     width: 100%;
     padding: 10px 10px;

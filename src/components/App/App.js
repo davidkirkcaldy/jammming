@@ -13,7 +13,6 @@ function App() {
   useEffect( () => {
     async function fetchData() {
       const tracks = await Spotify.search(searchTerm);
-      console.log('setTrackList');
       setTrackList(tracks);
     }
     fetchData();

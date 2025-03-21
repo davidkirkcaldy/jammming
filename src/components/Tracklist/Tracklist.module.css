@@ -7,9 +7,25 @@
     text-align: left;
     width: 45%;
     background-color:cornsilk;
-    padding: 10px 10px;
+    padding: 2px 5px;
     box-shadow: 5px 5px 1px lightblue;
     border-radius: 5px;
     border: 2px solid black;
     color:blue;
   }
+
+  .listTitleContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
+  .listTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    border-bottom: 2px solid black;
+    width: 100%;
+    padding: 0 auto;
+    margin:0 auto;
+  } 

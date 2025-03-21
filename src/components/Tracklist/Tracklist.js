@@ -8,16 +8,15 @@ import Track from '../Track/Track';
 
 const Tracklist = ({trackList, handleTrackFunction}) => {
 
-  for (var t in trackList) {
-    console.log('Track after fetchData: ', trackList[t]);
-} 
-
     const list =  trackList ? trackList.map((trk, index) => {
             return <Track key={index} track={trk}  inPlaylist={false} handleTrackFunction={handleTrackFunction}/>;
         }): null;
     
     return (
         <div className={classes.listContainer} >
+            <div className={classes.listTitleContainer}>
+                <label className={classes.listTitle}>Search Results</label>
+            </div>
             {list}
         </div>
     );
